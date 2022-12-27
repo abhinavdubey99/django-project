@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Bubblegum+Sans&family=Ubuntu+Condensed&display=swap');
+
+
+body{
+    font-family:  'Bubblegum Sans', cursive;
+    background-color: black;
+}
+*{
+    margin: 0;padding: 0;
+}
+nav{
+    display: flex;
+    margin: 10px auto;
+    width: 750px;
+    border: solid red 2px;
+    background-color: white;
+  
+}
+
+nav ul li{
+
+    text-align: center;
+    float: left;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 30px;
+     font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    margin: 2px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+  padding: 50px 50px;
+    
+    color: green;
+}
+nav ul li a:hover{
+    color: red;
+
+}
+
+
+
+.container
+{
+    border:solid red 5px;
+    height: 70vh;
+    width:70vw;
+    display: flex;
+   margin:20px auto;
+   border-radius: 10px;
+   background-color: white;
+}
+.container h1{
+    color: green;
+    padding: 30px 30px;
+    position: fixed;
+    left: 670px;
+    bottom: 500px;
+    
+}
+.container h3{
+    color: black;
+    position: fixed;
+    bottom:500px;
+    left: 700px;
+}
+.brand
+{
+    color: red;
+    font-size: 45px;
+}
+.image1{
+    width: 40px;
+    position: fixed;
+    top: 10px;
+}
+
+.reg{
+    display: flex;
+    border: solid red 4px;
+    margin: 100px auto;
+    height: 50vh;
+    width:30vw;
+
+}
+.name{
+    color: green;
+    position: fixed;
+    left:800px;
+    bottom: 360px;
+}
+.name1{
+    color: green;
+    position: fixed;
+    left:800px;
+    bottom: 300px;
+}
+.name2{
+    color: green;
+    position: fixed;
+    left:900px;
+    bottom: 180px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    border: solid red 2px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.name4{
+    color: green;
+    position: fixed;
+    left: 750px;
+    bottom: 240px;
+}
+
+    
+    
+    

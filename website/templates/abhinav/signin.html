@@ -1,0 +1,39 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple login form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'abhinav/style2.css' %}">
+    
+  </head>
+  <body>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags }} alert-dismissible fade show" role="alert">
+    <strong> Message:</strong> {{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true"> &times;</span>
+    </buuton>
+    </div>
+    {% endfor %}
+    <form action="/signin" method="POST">
+        {% csrf_token %}
+      <h1>Login Form</h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" Required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" id="pass1" name="pass1" placeholder="Enter Password"Required>
+      </div>
+      <button type="submit"><a href="/mainpage"> Log In</a></button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#"> Forgot Password</a></span>
+      </div>
+    </form>
+  </body>
+</html>

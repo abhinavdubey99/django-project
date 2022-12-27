@@ -1,0 +1,76 @@
+
+ {% load static %}   
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="{% static 'abhinav/style4.css' %}">
+ </head>
+ <body> 
+         
+      {% for message in messages %}
+         <div class="alert alert-{{message.tags }} alert-dismissible fade show" role="alert">
+         <strong> Message:</strong> {{message}}
+         <button type="button" class="close" data-dismiss="alert" aria-label="close">
+         <span aria-hidden="true"> &times;</span>
+         </buuton>
+         </div>
+      {% endfor %}
+       
+
+   
+
+
+      <h1> Registeration Form</h1>
+     
+      
+        <form action="/signup" method="POST">
+           {% csrf_token %}
+           <div class="formcontainer">
+            
+           <div class="container">
+           <label for="">username:</label>
+            <input type="text" id="username" name="username" placeholder="Create a username (only letters and numbers are required)"Required>
+            <br>
+           <label for="">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name"Required>
+            <br>
+           <label for="">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"Required>
+            <br>
+           <label for="">Emai ID:</label>
+            <input type="email" id="email" name="email" placeholder="Email ID"Required>
+            <br>
+           <label for="">Password:</label>
+            <input type="password" id="pass1" name="pass1" placeholder="Password"Required>
+            <br>
+           <label for="">Confirm Password:</label>
+            <input type="password" id="pass2" name="pass2" placeholder="Confirm Password"Required>
+            <br>
+           
+          
+            <button type="submit"> Sign Up</button>
+            
+  
+        </div>
+        </div>
+
+        </form>
+        
+           
+
+
+
+
+
+
+
+
+
+        </form>
+    
+ </body>
+ </html>

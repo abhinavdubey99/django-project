@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Bubblegum+Sans&family=Ubuntu+Condensed&family=Varela+Round&display=swap');
+
+body h1{
+     font-family: 'Varela Round', sans-serif;
+     position: fixed;
+     left: 600px;
+}
+
+body{
+    background-image: url("/static/abhinav/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    }
+ .container {
+    
+        padding: 16px 0;
+        text-align:left;
+      
+        
+        
+        }
+
+        input[type=text], input[type=password] ,input[type=email]{
+            width: 100%;
+            padding: 14px 9px;
+            margin: 2px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Varela Round', sans-serif; 
+            }
+
+            form {
+                border: 5px solid #f1f1f1;
+                display: flex;
+                margin: 70px auto;
+               
+            }
+
+            .formcontainer {
+                text-align: left;
+                margin: 24px 50px 12px;
+                
+                }
+
+                button {
+                    background-color: #3762d6;
+                    color: white;
+                    padding: 14px 0;
+                    margin: 10px 0;
+                    border: none;
+                    cursor: grabbing;
+                    width: 100%;
+                    }
+
+                    button:hover {
+                        opacity: 0.8;
+                        }
